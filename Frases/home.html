@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselhos API</title>
+</head>
+<style>
+    .title{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+</style>
+<body>
+    
+    <script>
+    function frase(url) {
+        let request = new XMLHttpRequest
+        request.open("GET", url, false)
+        request.send()
+        return request.responseText
+        
+    }
+    
+    function main(){
+       document.body.innerHTML= (frase("https://api.adviceslip.com/advice"));
+
+       document.body.style.fontSize = '24px';
+       document.body.style.color = 'green';
+       document.body.style.fontFamily = 'arial';
+       document.body.style.border = "thick solid #008000";
+    }
+    
+    main()
+    
+    window.setTimeout(function () {
+        window.location.reload();
+      }, 60000);
+    </script>
+
+    <h4 class="title">Atualiza em 60 segundos</h4>
+    
+</body>
+</html>
