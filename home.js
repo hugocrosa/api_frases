@@ -16,10 +16,11 @@ function frase(url) {
        document.body.style.color = 'green';
        document.body.style.fontFamily = 'arial';
        document.body.style.border = "thick solid #008000";
-    }
 
-
-
+      }
+   
+   
+   
 
     
 
